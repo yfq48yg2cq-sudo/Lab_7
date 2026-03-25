@@ -1,8 +1,8 @@
 /* Page background */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: yellow;
+  color: black;
   margin: 0;
   padding: 30px;
 }
@@ -13,32 +13,34 @@ h1 {
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
+  color: black;
 }
 
 p {
   text-align: center;
   font-style: italic;
-  color: #d0d0d0;
+  color: black;
 }
 
-/* Table container */
+/* Table container (floating box) */
 #planets {
   width: 90%;
   margin: 30px auto;
   border-collapse: collapse;
   border-radius: 12px;
   overflow: hidden;
-  background: rgba(255,255,255,0.05);
+  background: red;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 /* Header row */
 #planets th {
-  background: #111;
+  background: darkred;
   padding: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: 2px solid #444;
+  color: white;
 }
 
 /* Left column labels */
@@ -46,23 +48,24 @@ p {
   font-weight: bold;
   text-align: left;
   padding-left: 15px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
 }
 
 /* All cells */
 #planets td {
   padding: 12px;
   text-align: center;
+  color: black;
 }
 
 /* Row striping */
 #planets tr:nth-child(even) {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.2);
 }
 
 /* Hover effect */
 #planets tr:hover {
-  background: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.35);
   transition: 0.3s;
 }
 
@@ -71,7 +74,7 @@ p {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid black;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: float 4s ease-in-out infinite;
 }
@@ -86,15 +89,12 @@ p {
 /* Hover glow */
 #planets img:hover {
   transform: scale(1.25) rotate(8deg);
-  box-shadow: 0 0 20px rgba(255,255,255,0.7);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 /* Footer */
 footer {
   text-align: center;
   margin-top: 20px;
-  color: #bbb;
-}
-body {
-  background: yellow;
+  color: black;
 }
